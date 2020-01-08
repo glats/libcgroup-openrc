@@ -1,0 +1,27 @@
+pkgbase = libcgroup-openrc
+	pkgdesc = Library that abstracts the control group file system in Linux
+	pkgver = 0.41
+	pkgrel = 2
+	url = http://libcg.sourceforge.net
+	install = libcgroup.install
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	options = !emptydirs
+	options = !libtool
+	backup = etc/cgroup/cgconfig.conf
+	backup = etc/cgroup/cgrules.conf
+	backup = etc/cgroup/cgsnapshot_blacklist.conf
+	source = http://downloads.sourceforge.net/libcg/libcgroup-0.41.tar.bz2
+	source = cgconfig.initd
+	source = cgred.initd
+	source = cgconfig.confd
+	source = cgred.confd
+	sha256sums = e4e38bdc7ef70645ce33740ddcca051248d56b53283c0dc6d404e17706f6fb51
+	sha256sums = f96872615461d91ad5c10e50dbf68ffee130c3bd1bcfdac9b9987d4673c56ce5
+	sha256sums = 540ebbf0fbcc9e37a7d98629d4d4f6cd012350abbabfb8eca79b2dcddab510c7
+	sha256sums = 500b3f3a35eaa94b42ba6f9895498e4bfad44bbf36655782a2de3f78e9e1a23e
+	sha256sums = 52b8d2f417e21c0cd80289286483b554d6ab6bd33d2bb3f279736d869aee6d49
+
+pkgname = libcgroup-openrc
+
