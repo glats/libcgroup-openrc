@@ -1,7 +1,7 @@
 pkgbase = libcgroup-openrc
-	pkgdesc = Library that abstracts the control group file system in Linux
+	pkgdesc = Tools and libraries to configure and manage kernel control groups with OpenRC support
 	pkgver = 0.41
-	pkgrel = 2
+	pkgrel = 1
 	url = http://libcg.sourceforge.net
 	install = libcgroup.install
 	arch = i686

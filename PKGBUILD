@@ -1,7 +1,7 @@
 pkgname=libcgroup-openrc
 _pkgname=libcgroup
 pkgver=0.41
-pkgrel=2
+pkgrel=1
 pkgdesc='Tools and libraries to configure and manage kernel control groups with OpenRC support'
 arch=('i686' 'x86_64')
 url='http://libcg.sourceforge.net'
