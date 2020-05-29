@@ -7,16 +7,11 @@ CGCLASSIFY="/usr/sbin/cgclassify"
 :	${CG_CONFIGFILE:=/etc/cgroup/cgconfig.conf}
 description="Control Group Configuration Service"
 
-start_pre() {
-	checkpath -d /sys/fs/cgroup/systemd
-}
-
 start()
 {
 	ebegin "Setting up CGroups"
 	${CGCONFIGPARSER} --load=${CG_CONFIGFILE} >/dev/null 2>&1
 	eend "$?"
-	mount -t cgroup -o none,name=systemd systemd /sys/fs/cgroup/systemd
 }
 
 start_post()
@@ -34,7 +29,6 @@ start_post()
 stop()
 {
 	cgconfig_umount
-	umount /sys/fs/cgroup/systemd
 }
 
 cgconfig_umount()
