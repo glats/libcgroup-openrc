@@ -4,6 +4,7 @@ pkgver=0.41
 pkgrel=1
 pkgdesc='Tools and libraries to configure and manage kernel control groups with OpenRC support'
 arch=('i686' 'x86_64')
+depend=('pam' 'openrc')
 url='http://libcg.sourceforge.net'
 license=(LGPL)
 backup=('etc/cgroup/cgconfig.conf' 'etc/cgroup/cgrules.conf' 'etc/cgroup/cgsnapshot_blacklist.conf')
@@ -15,8 +16,8 @@ source=("http://downloads.sourceforge.net/libcg/${_pkgname}-${pkgver/rc/.rc}.tar
 	'cgconfig.confd'
 	'cgred.confd')
 sha256sums=('e4e38bdc7ef70645ce33740ddcca051248d56b53283c0dc6d404e17706f6fb51'
-            'f96872615461d91ad5c10e50dbf68ffee130c3bd1bcfdac9b9987d4673c56ce5'
-            '540ebbf0fbcc9e37a7d98629d4d4f6cd012350abbabfb8eca79b2dcddab510c7'
+            'db232d57a800144f0bc00b375240cba150f7e4db1a2456be3e2c1c6c9669312a'
+            '7380539f0dcd1992238c201682620034d9501b7ea26b5035e17c39467e3707e5'
             '500b3f3a35eaa94b42ba6f9895498e4bfad44bbf36655782a2de3f78e9e1a23e'
             '52b8d2f417e21c0cd80289286483b554d6ab6bd33d2bb3f279736d869aee6d49')
 

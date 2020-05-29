@@ -2,10 +2,10 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-command="/usr/sbin/cgrulesengd"
+pidfile="/run/${RC_SVCNAME}.pid"
+command="/usr/bin/cgrulesengd"
 command_args="${CGRED_OPTS}"
-command_background="1"
-pidfile="/var/run/cgred.pid"
+command_background=true
 description="CGroups Rules Engine Daemon"
 extra_started_commands="reload"
 
